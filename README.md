@@ -1,5 +1,10 @@
+<div align="center">
+
 ![Icon](icone.ico)
+
 # 🚀 Furious App - Acelerador de Downloads Profissional
+
+</div>
 
 Sistema completo de gerenciamento de downloads com interface web moderna. Suporta URLs diretas, magnets, torrents e JSON com fontes customizadas.
 
