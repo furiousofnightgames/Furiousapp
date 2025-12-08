@@ -4,6 +4,8 @@
 
 # 🚀 Furious App - Acelerador de Downloads Profissional
 
+[![Website](https://img.shields.io/badge/Website-FuriousApp-blue?style=for-the-badge&logo=google-chrome)](https://furiousofnightgames.github.io/Furiousapp/)
+
 </div>
 
 Sistema completo de gerenciamento de downloads com interface web moderna. Suporta URLs diretas, magnets, torrents e JSON com fontes customizadas.
