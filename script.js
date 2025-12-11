@@ -64,5 +64,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Download Button Feedback (Main and Old Versions)
+    const downloadlinks = document.querySelectorAll('.action-area > .cyber-button, .download-link');
+
+    downloadlinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            // Check if it's the main button or a text link
+            const isMainButton = link.classList.contains('cyber-button');
+            const originalText = link.innerHTML;
+
+            link.style.pointerEvents = 'none'; // Prevent double clicks
+            link.style.opacity = '0.8';
+
+            if (isMainButton) {
+                link.innerHTML = `
+                    <span class="btn-content">INICIANDO...</span>
+                    <span class="glitch-effect"></span>
+                `;
+            } else {
+                link.textContent = '[INICIANDO...]';
+            }
+
+            // Reset after a few seconds
+            setTimeout(() => {
+                link.innerHTML = originalText;
+                link.style.pointerEvents = 'auto';
+                link.style.opacity = '1';
+            }, 3000);
+        });
+    });
+
     console.log("Furious App Interface Loaded.");
 });
