@@ -321,3 +321,81 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+/* Old Versions Styles */
+.versions-control {
+    margin-top: 2rem;
+}
+
+.cyber-button.secondary {
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: none;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
+
+.cyber-button.secondary:hover {
+    background: rgba(0, 243, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+    transform: translateY(-2px);
+    color: #fff;
+}
+
+.old-versions-container {
+    margin-top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    border-width: 0;
+}
+
+.old-versions-container.open {
+    max-height: 300px;
+    /* Arbitrary limit, can be increased */
+    opacity: 1;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border-width: 1px;
+}
+
+.old-versions-container.hidden {
+    display: none;
+}
+
+.version-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    border-bottom: 1px solid rgba(0, 243, 255, 0.1);
+}
+
+.version-item:last-child {
+    border-bottom: none;
+}
+
+.version-name {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.download-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    transition: text-shadow 0.3s ease;
+}
+
+.download-link:hover {
+    text-shadow: 0 0 8px var(--primary-color);
+    color: #fff;
+}

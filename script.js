@@ -39,5 +39,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(createParticle, 200);
 
+    // Old Versions Toggle Logic
+    const btnOldVersions = document.getElementById('btn-old-versions');
+    const listOldVersions = document.getElementById('old-versions-list');
+
+    if (btnOldVersions && listOldVersions) {
+        btnOldVersions.addEventListener('click', () => {
+            if (listOldVersions.classList.contains('hidden')) {
+                // Open
+                listOldVersions.classList.remove('hidden');
+                // Force reflow
+                void listOldVersions.offsetWidth;
+                listOldVersions.classList.add('open');
+            } else {
+                // Close
+                listOldVersions.classList.remove('open');
+                // Wait for transition to end before setting display:none
+                setTimeout(() => {
+                    if (!listOldVersions.classList.contains('open')) {
+                        listOldVersions.classList.add('hidden');
+                    }
+                }, 500);
+            }
+        });
+    }
+
     console.log("Furious App Interface Loaded.");
 });

@@ -27,16 +27,33 @@
 
         <section class="content">
             <div class="card holographic">
-                <h2>INSTALADOR 1.0</h2>
+                <h2>INSTALADOR 2.0</h2>
                 <p>Otimizado. Seguro. Veloz. O futuro do gerenciamento está aqui.</p>
 
                 <div class="action-area">
-                    <a href="https://github.com/furiousofnightgames/Furiousapp/releases/download/v1.0/FuriousApp-instalador.zip"
-                        class="cyber-button" target="_blank" rel="noopener noreferrer">
+                    <!-- Main Download Button (Future Version Placeholder or Current) -->
+                    <a href="https://github.com/furiousofnightgames/Furiousapp/releases/download/v2.0/furiousapp-instalador-v2.0.zip"
+                        class="cyber-button" download>
                         <span class="btn-content">DOWNLOAD SYSTEM</span>
                         <span class="glitch-effect"></span>
                     </a>
-                    <p class="file-info">FuriousApp-instalador.zip | Windows 64-bit</p>
+                    <p class="file-info">furiousapp-instalador-v2.0.zip | 167 MB</p>
+
+                    <!-- Old Versions Toggle -->
+                    <div class="versions-control">
+                        <button id="btn-old-versions" class="cyber-button small secondary">
+                            <span class="btn-content">OLD VERSION</span>
+                        </button>
+                    </div>
+
+                    <!-- Old Versions List (Hidden by default) -->
+                    <div id="old-versions-list" class="old-versions-container hidden">
+                        <div class="version-item">
+                            <span class="version-name">FuriousApp v1.0 - Legacy</span>
+                            <a href="https://github.com/furiousofnightgames/Furiousapp/releases/download/v1.0/FuriousApp-instalador.zip"
+                                class="download-link" download>[DOWNLOAD]</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
