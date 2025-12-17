@@ -363,6 +363,7 @@ footer {
     margin-top: 1.5rem;
     padding: 1rem;
     border-width: 1px;
+    overflow-y: auto;
 }
 
 .old-versions-container.hidden {
@@ -398,4 +399,30 @@ footer {
 .download-link:hover {
     text-shadow: 0 0 8px var(--primary-color);
     color: #fff;
+}
+
+/* Custom Translucent Scrollbar for Old Versions Container */
+.old-versions-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.old-versions-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.old-versions-container::-webkit-scrollbar-thumb {
+    background: rgba(0, 243, 255, 0.3);
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.old-versions-container::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 243, 255, 0.5);
+}
+
+/* Firefox scrollbar styling */
+.old-versions-container {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 243, 255, 0.3) rgba(0, 0, 0, 0.2);
 }
