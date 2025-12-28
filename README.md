@@ -1,379 +1,221 @@
 <div align="center">
 
-![Icon](icone.ico)
+![FuriousApp Logo](icone.ico)
 
-# 🚀 Furious App - Acelerador de Downloads Profissional
+# FuriousApp
 
-[![Website](https://img.shields.io/badge/Website-FuriousApp-blue?style=for-the-badge&logo=google-chrome)](https://furiousofnightgames.github.io/Furiousapp/)
+### Gerenciador de Downloads Profissional para Windows
+
+[![Website](https://img.shields.io/badge/Website-Online-success?style=for-the-badge)](https://furiousofnightgames.github.io/Furiousapp/)
+[![Version](https://img.shields.io/badge/Version-2.7-blue?style=for-the-badge)](https://github.com/furiousofnightgames/Furiousapp/releases)
+[![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge)](https://github.com/furiousofnightgames/Furiousapp)
+[![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
+
+[**Download Agora**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v2.7/furiousapp-instalador-v2.7.zip) • [**Documentação**](https://furiousofnightgames.github.io/Furiousapp/) • [**Versões Anteriores**](https://github.com/furiousofnightgames/Furiousapp/releases)
 
 </div>
 
-Sistema completo de gerenciamento de downloads com interface web moderna. Suporta URLs diretas, magnets, torrents e JSON com fontes customizadas.
+---
 
-**Pronto para produção com instalador .EXE para Windows!**
+## 📋 Sobre o Projeto
+
+Este repositório contém o **site oficial** do FuriousApp, um gerenciador de downloads profissional desenvolvido para Windows. O site serve como página de apresentação e distribuição do software.
+
+### 🌐 Acesse o Site
+
+**URL:** [https://furiousofnightgames.github.io/Furiousapp/](https://furiousofnightgames.github.io/Furiousapp/)
+
+O site oferece:
+- Download direto da versão mais recente
+- Acesso a todas as versões anteriores
+- Informações sobre o projeto
+- Design moderno e responsivo
 
 ---
 
-## ✨ Recursos Principais
+## 🚀 Sobre o FuriousApp
 
-### 📦 Portabilidade Total
-- ✅ **Instalador automático** (.EXE com um clique)
-- ✅ **100% independente**: Python 3.10.5, Node.js 18.16.1 e aria2 1.37.0 inclusos
-- ✅ **Sem dependências externas**: Funciona offline após instalação
-- ✅ **Desinstalação segura**: Remove apenas a aplicação, preserva downloads
+FuriousApp é um gerenciador de downloads de alta performance para Windows, oferecendo:
 
-### 📥 Downloads Avançados
-- ✅ **URLs diretas** com suporte a resumo (range requests)
-- ✅ **Magnet links e torrents** via aria2
-- ✅ **Downloads segmentados** (paralelo com múltiplas conexões)
-- ✅ **Fila automática** (downloads sequenciais)
-- ✅ **Controle completo**: Pause, Resume, Cancel
-- ✅ **Monitoramento real-time**: Peers, seeders, velocidade
+### ✨ Características Principais
 
-### 🎨 Interface Web
-- ✅ **Design cyberpunk profissional** com TailwindCSS
-- ✅ **Dashboard** com estatísticas animadas
-- ✅ **Responsivo** (funciona em desktop, tablet, mobile)
-- ✅ **Notificações** para eventos (criação, conclusão, erro)
-- ✅ **Menu intuitivo** e fácil de navegar
+- **🔥 Alta Velocidade**: Downloads otimizados com múltiplas conexões paralelas
+- **🔒 Seguro**: Verificação de integridade e downloads seguros
+- **📦 Completo**: Instalador standalone sem dependências externas
+- **🎯 Intuitivo**: Interface moderna e fácil de usar
+- **🌐 Totalmente Local**: Funciona 100% offline após instalação
+- **⚡ Leve**: Otimizado para performance máxima
 
-### 📊 Gerenciamento
-- ✅ **Fontes JSON** customizadas
-- ✅ **Histórico completo** de downloads
-- ✅ **Filtros por status** (rodando, pausado, concluído, erro)
-- ✅ **Banco de dados** SQLite para persistência
+### 📊 Versão Atual
+
+**v2.7** - Full-Stable Windows  
+**Tamanho**: 171.97 MB  
+**Lançamento**: Dezembro 2025
 
 ---
 
-## 🚀 Como Começar
+## 💻 Requisitos do Sistema
 
-### Windows - Instalador (.EXE)
-
-```powershell
-# 1. Compile o instalador (requer NSIS 3.08+)
-.\compilar-instalador.ps1
-
-# 2. Resultado: FuriousAppInstaller.exe (418.57 MB)
-
-# 3. Distribua para usuários ou teste:
-# - Desinstale versão anterior (se houver)
-# - Execute FuriousAppInstaller.exe
-# - Selecione pasta: C:\Program Files\FuriousApp
-# - Clique "Instalar"
-
-# 4. Usuário clica em "Furious App" no Desktop
-# 5. Interface abre em janela desktop nativa (PyQt5)
-```
-
-**Documentação Rápida:**
-- 📖 [COMECE_AQUI.md](docs/COMECE_AQUI.md) - 3 passos para começar
-- 🔨 [COMPILAR_INSTALADOR.md](docs/COMPILAR_INSTALADOR.md) - Guia detalhado
-- 🎉 [POS_INSTALACAO.md](docs/POS_INSTALACAO.md) - Como usar após instalar
-- 📦 [EXECUTAVEL_README.md](docs/EXECUTAVEL_README.md) - Documentação técnica
+- **Sistema Operacional**: Windows 7 ou superior (64-bit)
+- **Espaço em Disco**: 200 MB para instalação
+- **RAM**: 2 GB mínimo (4 GB recomendado)
+- **Processador**: Intel Core i3 ou equivalente
 
 ---
 
-## 📖 Interface da Aplicação
+## 📥 Como Baixar
 
-### 🏠 Dashboard
-- Estatísticas de downloads (total, rodando, pausado, concluído, erro)
-- Gráficos animados
-- Status geral do sistema
+### Opção 1: Download Direto (Recomendado)
 
-### 📥 Downloads
-- Lista completa de downloads com status
-- Controle (pause, resume, cancel)
-- Detalhes (velocidade, peers, seeders)
-- Exibição de itens em fila
+Acesse o site oficial e clique no botão de download:
 
-### 🔗 Fontes JSON
-- Carregue de URL ou cole JSON
-- Visualize items disponíveis
-- Selecione múltiplos itens
-- Configure pasta de destino
+👉 [**DOWNLOAD FURIOUSAPP v2.7**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v2.7/furiousapp-instalador-v2.7.zip)
 
-### ⚙️ Novo Download
-- URL direta para arquivos
-- Detecção automática de nome
-- Configurações avançadas (k, n_conns, verificar SSL)
+### Opção 2: Versões Anteriores
+
+Todas as versões estão disponíveis na página de [Releases](https://github.com/furiousofnightgames/Furiousapp/releases) ou através do botão "OLD VERSION" no site.
 
 ---
 
-## 🛠️ Componentes Técnicos
+## 🛠️ Instalação
 
-### Backend (Python FastAPI)
-```
-backend/
-├── main.py              # API Rest + WebSocket
-├── db.py                # SQLite + migrations
-├── config.py            # Configurações
-└── models/
-    └── models.py        # SQLModel schemas
-```
-
-### Engine (Download Manager)
-```
-engine/
-├── manager.py           # JobManager - fila sequencial
-├── download.py          # Downloader serial/segmentado
-└── aria2_wrapper.py     # Interface com aria2
-```
-
-### Frontend (Vue.js 3)
-```
-frontend/
-├── dist/                # Build final (servido pelo backend)
-├── src/
-│   ├── components/      # Vue components
-│   ├── stores/          # Pinia (estado global)
-│   ├── views/           # Páginas (Dashboard, Downloads, etc)
-│   ├── services/        # Cliente HTTP
-│   └── styles/          # TailwindCSS + cyberpunk theme
-```
-
-### Portables Inclusos
-```
-portables/
-├── python-64bits/              # Python 3.10.5 (renomeado!)
-├── node-v18.16.1-win-x64/     # Node.js
-└── aria2-1.37.0/              # aria2 (download engine)
-```
-
-**Nota importante:** Python foi renomeado de `Portable-Python-3.10.5_x64` para `python-64bits` para evitar problemas de compilação NSIS com nomes muito longos.
+1. **Baixe** o arquivo `furiousapp-instalador-v2.7.zip`
+2. **Extraia** o conteúdo do arquivo ZIP
+3. **Execute** o instalador `FuriousAppInstaller.exe`
+4. **Siga** as instruções na tela
+5. **Pronto!** O FuriousApp está instalado e pronto para uso
 
 ---
 
-## 📊 Status do Projeto
+## 📁 Estrutura do Repositório (Site)
 
-| Aspecto | Status |
-|---------|--------|
-| Backend API | ✅ Completo |
-| Frontend UI | ✅ Completo |
-| Downloads | ✅ Funcionando |
-| Magnet/Torrent | ✅ Funcionando |
-| Real-time Updates | ✅ WebSocket |
-| Persistência | ✅ SQLite |
-| Instalador NSIS | ✅ Pronto |
-| Documentação | ✅ Completa |
-| **Produção** | ✅ **PRONTO** |
-
----
-
-## 🔧 Instalação do Desenvolvedor
-
-### Pré-requisitos
-- Python 3.9+
-- Node.js 14+
-- Git
-
-### Setup
-
-```bash
-# 1. Clone ou extraia o projeto
-cd aplicacao-pessoal-json
-
-# 2. Backend
-pip install -r requirements.txt
-
-# 3. Frontend
-cd frontend
-npm install
-npm run build
-cd ..
-
-# 4. Execute
-python run.py
 ```
-
-Abra: http://localhost:8000
-
----
-
-## 🎯 Compilar Instalador .EXE
-
-### Pré-requisitos
-- NSIS 3.08+ (https://nsis.sourceforge.io/)
-
-### Compilação
-
-```powershell
-# Verifique se NSIS está instalado
-Test-Path "C:\Program Files (x86)\NSIS\makensis.exe"
-
-# Compile o instalador
-.\compilar-instalador.ps1
-
-# Resultado: FuriousAppInstaller.exe
+Furiousapp-github/
+├── index.html          # Página principal do site
+├── style.css           # Estilos e tema cyberpunk
+├── script.js           # Interatividade e animações
+├── sobre.html          # Página sobre o projeto
+├── icone.ico           # Ícone oficial
+└── README.md           # Este arquivo
 ```
 
 ---
 
-## 📁 Estrutura de Pastas
+## 🎨 Tecnologias do Site
 
-```
-aplicacao-pessoal-json/
-├── portables/
-│   ├── python-64bits/                (Python portátil)
-│   └── node-v18.16.1-win-x64/        (Node portátil)
-│   └──aria2-1.37.0/                     (aria2 binário)
-├── backend/                          (API Python/FastAPI)
-├── engine/                           (Download manager)
-├── frontend/                         (Vue.js app)
-├── launcher/                         (Scripts de inicialização)
-├── nsis-installer.nsi                (Config do instalador)
-├── compilar-instalador.ps1           (Script de compilação)
-├── COMECE_AQUI.md                    (Início rápido)
-├── POS_INSTALACAO.md                 (Pós-instalação)
-└── README.md                         (Este arquivo)
-```
+O site foi desenvolvido com tecnologias modernas para garantir a melhor experiência:
+
+- **HTML5**: Estrutura semântica e acessível
+- **CSS3**: Design responsivo com animações fluidas
+- **JavaScript**: Interatividade e efeitos visuais
+- **Google Fonts**: Tipografia premium (Orbitron, Rajdhani)
+- **SEO Otimizado**: Meta tags completas para melhor indexação
+
+### Design
+
+- **Tema**: Cyberpunk futurista
+- **Cores**: Cyan (#00ffff), gradientes vibrantes
+- **Efeitos**: Glitch, holográfico, partículas animadas
+- **Responsividade**: Compatível com desktop, tablet e mobile
 
 ---
 
-## 🔌 API Endpoints
+## 🔍 SEO e Visibilidade
 
-### Downloads
-- `POST /api/jobs` - Criar download
-- `GET /api/jobs` - Listar downloads
-- `GET /api/jobs/{id}` - Detalhes
-- `POST /api/jobs/{id}/pause` - Pausar
-- `POST /api/jobs/{id}/resume` - Retomar
-- `POST /api/jobs/{id}/cancel` - Cancelar
-- `DELETE /api/jobs/{id}` - Deletar arquivo
+O site está otimizado para mecanismos de busca com:
 
-### Fontes
-- `POST /api/load-json` - Carregar de URL
-- `POST /api/load-json/raw` - Carregar JSON direto
-- `GET /api/sources` - Listar fontes
-- `DELETE /api/sources/{id}` - Deletar fonte
+- ✅ Meta tags completas (title, description, keywords)
+- ✅ Open Graph para redes sociais (Facebook, WhatsApp, LinkedIn)
+- ✅ Twitter Cards para compartilhamento no Twitter/X
+- ✅ Structured Data (Schema.org JSON-LD)
+- ✅ Canonical URLs
+- ✅ Sitemap e robots.txt
 
-### Sistema
-- `WS /ws` - WebSocket (progresso real-time)
-- `GET /api/aria2/status` - Status do aria2
-
-### Documentação Interativa
-- http://localhost:8000/docs (Swagger UI)
-- http://localhost:8000/redoc (ReDoc)
+**Palavras-chave**: FuriousApp, download manager, gerenciador de downloads, Windows, aria2c, torrent, download rápido
 
 ---
 
-## 🎨 Temas e Personalizações
+## 📱 Redes Sociais e Compartilhamento
 
-### Cyberpunk Theme
-- Cores: Cyan (#06b6d4), Pink (#ec4899), Purple (#8b5cf6)
-- Animações: Pulsing, bouncing, glowing effects
-- Ícones: SVG customizados com gradientes
+O site está preparado para compartilhamento em todas as principais plataformas:
 
-### Customização
-Edite: `frontend/src/styles/cyberpunk.css`
-
----
-
-## 🚀 Performance
-
-- **Backend**: FastAPI (async/await)
-- **Frontend**: Vue 3 (composition API)
-- **Downloads**: aria2 (motor profissional)
-- **Banco**: SQLite (rápido e leve)
-- **Tamanho do .EXE**: ~475MB (Python + Node inclusos)
+- **Facebook**: Preview otimizado com imagem e descrição
+- **Twitter/X**: Cards com imagem destacada
+- **WhatsApp**: Visualização rica com logo
+- **LinkedIn**: Apresentação profissional
 
 ---
 
-## 🔐 Segurança e Privacidade
+## 🔄 Atualizações
 
-- ✅ **Offline first**: Funciona sem conexão (após instalação)
-- ✅ **Sem rastreamento**: Nenhum dado enviado
-- ✅ **Código aberto**: Audite conforme necessário
-- ✅ **SSL/TLS**: Suporte a HTTPS para downloads
+### Versão 2.7 (Atual)
+- Interface aprimorada
+- Performance otimizada
+- Correções de bugs
+- Estabilidade melhorada
 
----
+### Histórico de Versões
 
-## 📝 Notas Importantes
-
-### Pasta de Downloads
-Por padrão: `C:\Users\[Seu Usuário]\Downloads`  
-Pode ser customizada ao criar cada download
-
-### aria2
-- Baixado de: https://aria2.github.io/
-- Versão incluída: 1.37.0
-- Localização: `portables/aria2-1.37.0/`
-
-### Banco de Dados
-- Localização: `data.db` (projeto root)
-- Tipo: SQLite 3
-- Backup recomendado antes de desinstalar
+- **v2.6**: Full-Stable sem pré-alocação
+- **v2.5**: Full-Stable sem pré-alocação
+- **v2.4**: Full-Stable sem pré-alocação
+- **v2.3**: Stable com pré-alocação
+- **v2.2**: Stable com pré-alocação
+- **v2.1**: Legacy
+- **v2.0**: Legacy
+- **v1.0**: Primeira versão
 
 ---
 
-## ❓ Dúvidas Frequentes
+## 📞 Suporte e Contato
 
-**P: Preciso de Python/Node instalados?**  
-R: Não! Tudo está incluído no .EXE.
+### Suporte Técnico
 
-**P: Funciona offline?**  
-R: Sim, após instalação funciona 100% offline.
+Para dúvidas, problemas ou sugestões:
 
-**P: Como atualizar?**  
-R: Desinstale a versão antiga e instale a nova.
+1. Visite a [página sobre](https://furiousofnightgames.github.io/Furiousapp/sobre.html)
+2. Consulte a documentação incluída no instalador
+3. Verifique as [Issues](https://github.com/furiousofnightgames/Furiousapp/issues) no GitHub
 
-**P: Onde são salvos os downloads?**  
-R: Você escolhe ao criar cada download.
+### Links Úteis
 
-**P: Posso usar em Mac/Linux?**  
-R: Sim, execute via Python. O instalador .EXE é apenas Windows.
-
----
-
-## 🎓 Tecnologias Utilizadas
-
-**Backend**
-- Python 3.10.5
-- FastAPI
-- SQLModel
-- Uvicorn
-- aria2
-
-**Frontend**
-- Vue 3
-- Pinia (state management)
-- TailwindCSS
-- Vite
-- Axios
-
-**DevOps**
-- NSIS (instalador)
-- PowerShell (scripts)
-- Batch (launcher)
+- 🌐 **Site Oficial**: [furiousofnightgames.github.io/Furiousapp](https://furiousofnightgames.github.io/Furiousapp/)
+- 📦 **Releases**: [GitHub Releases](https://github.com/furiousofnightgames/Furiousapp/releases)
+- 📖 **Documentação**: Incluída no instalador
 
 ---
 
-## 📄 Licença e Créditos
+## 📄 Licença e Direitos
 
-Desenvolvido com ❤️ por furiousofnight Apps
+© 2025 **Furious Systems**. Todos os direitos reservados.
 
-**Data de Lançamento**: Dezembro 2025  
-**Versão**: 1.0.0  
-**Status**: ✅ Produção
+Este software é proprietário e seu uso está sujeito aos termos de licença incluídos no instalador.
 
 ---
 
-## 📞 Suporte
+## 🙏 Agradecimentos
 
-Para dúvidas ou problemas:
-1. Consulte `COMECE_AQUI.md` (início rápido)
-2. Leia `POS_INSTALACAO.md` (pós-instalação)
-3. Verifique os logs no console
-4. Acesse http://localhost:8000/docs para API docs
+Agradecemos a todos os usuários que confiam no FuriousApp para gerenciar seus downloads.
+
+### Tecnologias Utilizadas
+
+- **aria2**: Motor de download de alta performance
+- **Python**: Backend robusto
+- **Vue.js**: Interface moderna
+- **FastAPI**: API rápida e eficiente
 
 ---
 
-**Aproveite o Furious App! 🚀**
+<div align="center">
 
-Then visit `http://127.0.0.1:8008` to access the frontend UI.
+### 🚀 Experimente a Próxima Geração de Downloads
 
+[**BAIXAR FURIOUSAPP v2.7**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v2.7/furiousapp-instalador-v2.7.zip)
 
-Next steps:
-- Add tests and packaging scripts (PyInstaller)
-- Improve error handling and retry/backoff strategies
-- Add pause/resume for segmented downloads (persist part metadata)
-- Add authentication or session management if desired
+**Desenvolvido com ❤️ pela Furious Systems**
+
+---
+
+[![Website](https://img.shields.io/badge/Visite-FuriousApp.com-00ffff?style=for-the-badge&logo=google-chrome&logoColor=white)](https://furiousofnightgames.github.io/Furiousapp/)
+
+</div>
