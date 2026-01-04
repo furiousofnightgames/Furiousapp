@@ -69,7 +69,7 @@ FuriousApp é um gerenciador de downloads de alta performance para Windows, ofer
 
 Acesse o site oficial e clique no botão de download:
 
-👉 [**DOWNLOAD FURIOUSAPP v2.7**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.2/furiousapp-instalador-v3.2.zip)
+👉 [**DOWNLOAD FURIOUSAPP v3.2**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.2/furiousapp-instalador-v3.2.zip)
 
 ### Opção 2: Versões Anteriores
 
