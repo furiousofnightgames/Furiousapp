@@ -48,16 +48,16 @@ FuriousApp é um gerenciador de downloads de alta performance para Windows, ofer
 
 ### 📊 Versão Atual
 
-**v2.7** - Full-Stable Windows  
-**Tamanho**: 171.97 MB  
-**Lançamento**: Dezembro 2025
+**v3.2** - Full-Stable Windows  
+**Tamanho**: 166.48 MB  
+**Lançamento**: Janeiro 2026
 
 ---
 
 ## 💻 Requisitos do Sistema
 
 - **Sistema Operacional**: Windows 7 ou superior (64-bit)
-- **Espaço em Disco**: 200 MB para instalação
+- **Espaço em Disco**: 500 MB para instalação
 - **RAM**: 2 GB mínimo (4 GB recomendado)
 - **Processador**: Intel Core i3 ou equivalente
 
@@ -69,7 +69,7 @@ FuriousApp é um gerenciador de downloads de alta performance para Windows, ofer
 
 Acesse o site oficial e clique no botão de download:
 
-👉 [**DOWNLOAD FURIOUSAPP v2.7**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v2.7/furiousapp-instalador-v2.7.zip)
+👉 [**DOWNLOAD FURIOUSAPP v2.7**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.2/furiousapp-instalador-v3.2.zip)
 
 ### Opção 2: Versões Anteriores
 
@@ -148,7 +148,7 @@ O site está preparado para compartilhamento em todas as principais plataformas:
 
 ## 🔄 Atualizações
 
-### Versão 2.7 (Atual)
+### Versão 3.2 (Atual)
 - Interface aprimorada
 - Performance otimizada
 - Correções de bugs
@@ -210,7 +210,7 @@ Agradecemos a todos os usuários que confiam no FuriousApp para gerenciar seus d
 
 ### 🚀 Experimente a Próxima Geração de Downloads
 
-[**BAIXAR FURIOUSAPP v2.7**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v2.7/furiousapp-instalador-v2.7.zip)
+[**BAIXAR FURIOUSAPP v2.7**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.2/furiousapp-instalador-v3.2.zip)
 
 **Desenvolvido com ❤️ pela Furious Systems**
 
