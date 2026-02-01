@@ -1,43 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Basic particle system creation for visual flair
+    // Cyberpunk Particle System
     const particlesContainer = document.getElementById('particles');
+    const particleCount = 40;
 
     function createParticle() {
         const particle = document.createElement('div');
-        particle.style.position = 'absolute';
-        particle.style.width = Math.random() * 4 + 'px';
-        particle.style.height = particle.style.width;
-        particle.style.background = `rgba(0, 243, 255, ${Math.random()})`;
-        particle.style.borderRadius = '50%';
-        particle.style.left = Math.random() * 100 + '%';
-        particle.style.top = '100%';
-        particle.style.boxShadow = '0 0 10px rgba(0, 243, 255, 0.8)';
+        const size = Math.random() * 3 + 1;
 
-        const duration = Math.random() * 5 + 5;
-        particle.style.animation = `floatUp ${duration}s linear forwards`;
+        particle.style.position = 'absolute';
+        particle.style.width = `${size}px`;
+        particle.style.height = `${size}px`;
+        particle.style.background = Math.random() > 0.5 ? 'var(--primary)' : 'var(--secondary)';
+        particle.style.left = Math.random() * 100 + '%';
+        particle.style.top = Math.random() * 100 + '%';
+        particle.style.opacity = Math.random() * 0.5 + 0.2;
+        particle.style.boxShadow = `0 0 10px ${particle.style.background}`;
+        particle.style.pointerEvents = 'none';
+
+        // Random drift animation
+        const duration = Math.random() * 15 + 10;
+        const driftX = (Math.random() - 0.5) * 200;
+        const driftY = (Math.random() - 0.5) * 200;
+
+        particle.animate([
+            { transform: 'translate(0, 0)', opacity: particle.style.opacity },
+            { transform: `translate(${driftX}px, ${driftY}px)`, opacity: 0 }
+        ], {
+            duration: duration * 1000,
+            iterations: Infinity,
+            direction: 'alternate',
+            easing: 'ease-in-out'
+        });
 
         particlesContainer.appendChild(particle);
-
-        // Remove particle after animation
-        setTimeout(() => {
-            particle.remove();
-        }, duration * 1000);
     }
 
-    // Add keyframes for floatUp if not present (handled here for simplicity or could be in CSS)
-    const styleSheet = document.createElement("style");
-    styleSheet.innerText = `
-        @keyframes floatUp {
-            to {
-                top: -10px;
-                opacity: 0;
-                transform: translateX(${Math.random() * 100 - 50}px) rotate(360deg);
-            }
-        }
-    `;
-    document.head.appendChild(styleSheet);
-
-    setInterval(createParticle, 200);
+    // Initialize particles
+    for (let i = 0; i < particleCount; i++) {
+        createParticle();
+    }
 
     // Old Versions Toggle Logic
     const btnOldVersions = document.getElementById('btn-old-versions');
@@ -45,16 +46,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (btnOldVersions && listOldVersions) {
         btnOldVersions.addEventListener('click', () => {
-            if (listOldVersions.classList.contains('hidden')) {
-                // Open
+            const isHidden = listOldVersions.classList.contains('hidden');
+
+            if (isHidden) {
                 listOldVersions.classList.remove('hidden');
                 // Force reflow
                 void listOldVersions.offsetWidth;
                 listOldVersions.classList.add('open');
+                btnOldVersions.querySelector('span:not(.btn-icon)').textContent = 'FECHAR VERSÕES';
+
+                // Scroll to list
+                setTimeout(() => {
+                    listOldVersions.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 300);
             } else {
-                // Close
                 listOldVersions.classList.remove('open');
-                // Wait for transition to end before setting display:none
+                btnOldVersions.querySelector('span:not(.btn-icon)').textContent = 'VERSÕES ANTERIORES';
                 setTimeout(() => {
                     if (!listOldVersions.classList.contains('open')) {
                         listOldVersions.classList.add('hidden');
@@ -64,35 +71,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Download Button Feedback (Main and Old Versions)
-    const downloadlinks = document.querySelectorAll('.action-area > .cyber-button, .download-link');
+    // Interactive Hover Effects for Download Buttons
+    const downloadBtns = document.querySelectorAll('.cyber-button, .download-link');
 
-    downloadlinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            // Check if it's the main button or a text link
-            const isMainButton = link.classList.contains('cyber-button');
-            const originalText = link.innerHTML;
-
-            link.style.pointerEvents = 'none'; // Prevent double clicks
-            link.style.opacity = '0.8';
-
-            if (isMainButton) {
-                link.innerHTML = `
-                    <span class="btn-content">INICIANDO...</span>
-                    <span class="glitch-effect"></span>
-                `;
-            } else {
-                link.textContent = '[INICIANDO...]';
+    downloadBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Visual feedback on click
+            const originalContent = btn.innerHTML;
+            if (btn.classList.contains('primary-btn')) {
+                btn.innerHTML = '<span class="btn-content">INICIANDO...</span>';
+                setTimeout(() => { btn.innerHTML = originalContent; }, 2000);
             }
-
-            // Reset after a few seconds
-            setTimeout(() => {
-                link.innerHTML = originalText;
-                link.style.pointerEvents = 'auto';
-                link.style.opacity = '1';
-            }, 3000);
         });
     });
 
-    console.log("Furious App Interface Loaded.");
+    // Reveal animations on scroll
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.feature-card, .card.holographic').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+        revealObserver.observe(el);
+    });
+
+    console.log("Furious App Interface v3.3.1 Engine Online.");
 });
