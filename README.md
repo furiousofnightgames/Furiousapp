@@ -7,7 +7,7 @@
 ### Gerenciador de Downloads Profissional para Windows
 
 [![Website](https://img.shields.io/badge/Website-Online-success?style=for-the-badge)](https://furiousofnightgames.github.io/Furiousapp/)
-[![Version](https://img.shields.io/badge/Version-3.2-blue?style=for-the-badge)](https://github.com/furiousofnightgames/Furiousapp/releases)
+[![Version](https://img.shields.io/badge/Version-3.3.1-blue?style=for-the-badge)](https://github.com/furiousofnightgames/Furiousapp/releases)
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge)](https://github.com/furiousofnightgames/Furiousapp)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
 
