@@ -11,7 +11,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge)](https://github.com/furiousofnightgames/Furiousapp)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
 
-[**Download Agora**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.2/furiousapp-instalador-v3.2.zip) • [**Documentação**](https://furiousofnightgames.github.io/Furiousapp/) • [**Versões Anteriores**](https://github.com/furiousofnightgames/Furiousapp/releases)
+[**Download Agora**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.3.1/furiousapp-instalador-v3.3.1.zip) • [**Documentação**](https://furiousofnightgames.github.io/Furiousapp/) • [**Versões Anteriores**](https://github.com/furiousofnightgames/Furiousapp/releases)
 
 </div>
 
