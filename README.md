@@ -7,11 +7,11 @@
 ### Gerenciador de Downloads Profissional para Windows
 
 [![Website](https://img.shields.io/badge/Website-Online-success?style=for-the-badge)](https://furiousofnightgames.github.io/Furiousapp/)
-[![Version](https://img.shields.io/badge/Version-3.2-blue?style=for-the-badge)](https://github.com/furiousofnightgames/Furiousapp/releases)
+[![Version](https://img.shields.io/badge/Version-3.3.1-blue?style=for-the-badge)](https://github.com/furiousofnightgames/Furiousapp/releases)
 [![Platform](https://img.shields.io/badge/Platform-Windows-lightgrey?style=for-the-badge)](https://github.com/furiousofnightgames/Furiousapp)
 [![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)](LICENSE)
 
-[**Download Agora**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.2/furiousapp-instalador-v3.2.zip) • [**Documentação**](https://furiousofnightgames.github.io/Furiousapp/) • [**Versões Anteriores**](https://github.com/furiousofnightgames/Furiousapp/releases)
+[**Download Agora**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.3.1/furiousapp-instalador-v3.3.1.zip) • [**Documentação**](https://furiousofnightgames.github.io/Furiousapp/) • [**Versões Anteriores**](https://github.com/furiousofnightgames/Furiousapp/releases)
 
 </div>
 
@@ -69,7 +69,7 @@ FuriousApp é um gerenciador de downloads de alta performance para Windows, ofer
 
 Acesse o site oficial e clique no botão de download:
 
-👉 [**DOWNLOAD FURIOUSAPP v3.2**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.2/furiousapp-instalador-v3.2.zip)
+👉 [**DOWNLOAD FURIOUSAPP v3.3.1**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.3.1/furiousapp-instalador-v3.3.1.zip)
 
 ### Opção 2: Versões Anteriores
 
@@ -148,23 +148,13 @@ O site está preparado para compartilhamento em todas as principais plataformas:
 
 ## 🔄 Atualizações
 
-### Versão 3.2 (Atual)
+### Versão 3.3.1 (Atual)
 - Interface aprimorada
 - Performance otimizada
 - Correções de bugs
 - Estabilidade melhorada
-
-### Histórico de Versões
-
-- **v2.6**: Full-Stable sem pré-alocação
-- **v2.5**: Full-Stable sem pré-alocação
-- **v2.4**: Full-Stable sem pré-alocação
-- **v2.3**: Stable com pré-alocação
-- **v2.2**: Stable com pré-alocação
-- **v2.1**: Legacy
-- **v2.0**: Legacy
-- **v1.0**: Primeira versão
-
+- Novo designer visual
+- Novas funções
 ---
 
 ## 📞 Suporte e Contato
@@ -210,7 +200,7 @@ Agradecemos a todos os usuários que confiam no FuriousApp para gerenciar seus d
 
 ### 🚀 Experimente a Próxima Geração de Downloads
 
-[**BAIXAR FURIOUSAPP v2.7**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.2/furiousapp-instalador-v3.2.zip)
+[**BAIXAR FURIOUSAPP v3.3.1**](https://github.com/furiousofnightgames/Furiousapp/releases/download/v3.3.1/furiousapp-instalador-v3.3.1.zip)
 
 **Desenvolvido com ❤️ pela Furious Systems**
 
