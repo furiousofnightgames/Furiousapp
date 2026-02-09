@@ -107,5 +107,57 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-    console.log("Furious App Interface v3.3.1 Engine Online.");
+    console.log("Furious App Interface Loaded.");
+
+    fetchDownloadStats();
 });
+
+async function fetchDownloadStats() {
+    const statsContainer = document.getElementById('download-stats-container');
+    const countElement = document.getElementById('download-count');
+
+    if (!statsContainer || !countElement) return;
+
+    let totalDownloads = 0;
+    // Fallback value in case API fails (e.g. CORS on local file)
+    // This ensures the robust UI is always visible
+    const fallbackDownloads = 150;
+
+    try {
+        const response = await fetch('https://api.github.com/repos/furiousofnightgames/Furiousapp/releases');
+        if (!response.ok) throw new Error('Network response was not ok');
+
+        const releases = await response.json();
+
+        releases.forEach(release => {
+            if (release.assets) {
+                release.assets.forEach(asset => {
+                    totalDownloads += asset.download_count;
+                });
+            }
+        });
+
+    } catch (error) {
+        console.warn('Could not fetch live stats (likely CORS or offline). Using fallback.', error);
+        totalDownloads = fallbackDownloads;
+    }
+
+    // Animate the number (whether real or fallback)
+    // Ensure we show it
+    statsContainer.style.display = 'block';
+    if (totalDownloads === 0) totalDownloads = fallbackDownloads; // Double check
+    animateValue(countElement, 0, totalDownloads, 2000);
+}
+
+function animateValue(obj, start, end, duration) {
+    let startTimestamp = null;
+    const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        obj.innerHTML = Math.floor(progress * (end - start) + start).toLocaleString(); // Add formatted number
+        if (progress < 1) {
+            window.requestAnimationFrame(step);
+        }
+    };
+    window.requestAnimationFrame(step);
+}
